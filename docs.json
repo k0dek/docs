@@ -13,24 +13,16 @@
         "tab": "Product",
         "groups": [
           {
-            "group": "Features",
+            "group": "Getting Started",
             "pages": [
-              "product/features",
-              "product/benefits",
-              "product/ai-assistant",
-              "product/mobile-support"
+              "product/index"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
-        "groups": [
+          },
           {
-            "group": "Supported Tools",
+            "group": "Integrations",
             "pages": [
               "integrations/jira",
-              "integrations/slack"
+              "integration/slack"
             ]
           }
         ]
