@@ -15,7 +15,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "product/install-extension"
+              "product/install-extension",
+              "product/security"
             ]
           },
           {
