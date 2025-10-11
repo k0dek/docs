@@ -22,7 +22,7 @@
             "group": "Integrations",
             "pages": [
               "integrations/jira",
-              "integration/slack"
+              "integrations/slack"
             ]
           }
         ]
