@@ -13,7 +13,7 @@
         "tab": "Product",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Getting Started",
             "pages": [
               "product/install-extension"
             ]
