@@ -16,6 +16,9 @@
             "group": "Getting Started",
             "pages": [
               "product/install-extension",
+              "product/core-features",
+              "product/data-captured",
+              "product/replay-feature",
               "product/security"
             ]
           },
