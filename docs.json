@@ -70,18 +70,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Pricing",
-        "href": "https://usetool.bar/pricing"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:contact@usetool.bar"
+        "label": "Dashboard",
+        "href": "https://app.usetool.bar/"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.usetool.bar"
+      "label": "Extension",
+      "href": "https://usetool.bar/"
     }
   },
   "contextual": {
