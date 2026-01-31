@@ -8,6 +8,20 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Homepage",
+          "icon": "home",
+          "href": "https://usetool.bar"
+        },
+        {
+          "anchor": "Support",
+          "icon": "envelope",
+          "href": "mailto:contact@usetool.bar"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Product",
@@ -19,6 +33,12 @@
               "product/data-captured",
               "product/replay-feature",
               "product/security"
+            ]
+          },
+          {
+            "group": "Debug with Toolbar",
+            "pages": [
+              "product/getting-started/mcp"
             ]
           },
           {
@@ -41,21 +61,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Homepage",
-          "href": "https://usetool.bar",
-          "icon": "home"
-        },
-        {
-          "anchor": "Support",
-          "href": "mailto:contact@usetool.bar",
-          "icon": "envelope"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",

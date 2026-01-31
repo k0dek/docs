@@ -1,0 +1,65 @@
+---
+title: "MCP"
+description: "Toolbar MCP lets AI agents and developer tools load your bug report context directly from Toolbar: screen recordings, screenshots, console logs, network requests, user actions, and AI summaries. 
+Paste a Toolbar link into a supported MCP client (Claude Code, Cursor, VS Code, etc.), and the agent can instantly see what happened instead of asking you to re-explain steps to reproduce."
+---
+
+## How to get started?  
+
+You’ll need:
+
+- The Toolbar browser extension installed
+- At least one recording or screenshot link
+
+If you don’t have one yet, [install the extension](/product/install-extension) and create a quick test recording.
+
+## **Configure your MCP client** 
+
+### **Claude Code** 
+
+In your terminal, run:
+
+```shellscript
+claude mcp add Toolbar
+https://mcp.usetool.bar -t http -s user
+```
+
+## **How to use it**?
+
+1. Copy a toolbar link or multiple links (recording / screenshot / replay).
+2. Open Claude Code and start a new chat.
+3. Paste the link into your prompt and describe what you want (debug, create tickets, summarize, etc.).
+4. Approve any Toolbar MCP tool calls when Claude asks.
+
+## **Prompt examples**
+
+Debug a bug:
+
+```
+Use Toolbar MCP on this recording <Toolbar Link> and:
+- explain what went wrong
+- show the relevant console logs or network errors
+- propose a fix in our codebase
+```
+
+Implement design / product feedback:
+
+```
+I recorded product feedback in this Toolbar link <Toolbar Link>.
+Use Toolbar MCP to extract all requested changes and propose an implementation plan
+with concrete steps and files/components to touch.
+```
+
+## **FAQ**
+
+<AccordionGroup>
+  <Accordion title="Do I need the extension installed?" defaultOpen>
+    You only need an existing Toolbar link to use MCP, but the extension is how most people record.
+  </Accordion>
+  <Accordion title="Can you use multiple links in one prompt?">
+    Yes, but for best results (and context limits), start with one link per analysis.
+  </Accordion>
+  <Accordion title="What access does AI get?">
+    Toolbar MCP respects your existing workspace permissions - AI only sees what you can already see in Toolbar.
+  </Accordion>
+</AccordionGroup>
