@@ -1,0 +1,50 @@
+---
+title: "Sentry"
+---
+
+Pull Sentry errors directly into your Toolbar bug reports - see frontend and backend context in one place.
+
+<Frame>
+  ![Image](/images/image.png)
+</Frame>
+
+### Overview
+
+When you capture a bug with Toolbar, you already get the full frontend picture: console logs, network requests, browser info, and a screenshot. With the **Sentry integration**, you also get the backend side, Sentry errors and stack traces matched to the exact moment the bug occurred.
+
+The result: engineers get full-stack context in one place, without switching tabs or cross-referencing timestamps manually.
+
+---
+
+### What It Does
+
+- **Sentry events surfaced in Toolbar**: errors from your Sentry projects are automatically matched to the timestamp of each bug report
+- **Timestamp scoping**: Toolbar shows Sentry logs from a 5-minute window around when the bug was captured
+- **Environment filtering**: logs are scoped to the environment detected from your frontend (e.g. `staging`, `production`)
+- **One-click drill-down**: click any Sentry event in Toolbar to jump directly to that event in Sentry
+
+---
+
+### How to connect
+
+**1. Open your Toolbar workspace settings**
+
+Go to [app.usetool.bar](http://app.usetool.bar) and navigate to **Settings → Integrations**
+
+**2. Connect Sentry via OAuth**
+
+Click **Connect Sentry** and go through the Sentry OAuth flow to authorize Toolbar.
+
+> **Tip:** If Sentry is installed on the website where you capture bugs, Toolbar will auto-detect it and prompt you to connect directly from the extension — no need to go through settings.
+
+**3. Start capturing**
+
+Done! Next time you capture a bug with Toolbar, you'll see a **Sentry** tab in the report with matched errors from your Sentry projects.
+
+---
+
+### How Sentry events are matched
+
+Toolbar filters Sentry events by the **timestamp** of the bug capture. By default, it shows events from **5 minutes before and after** the bug was reported.
+
+Toolbar also automatically scopes events to the **environment** your frontend sends to Sentry. For example, if your app sends events with `environment: staging`, Toolbar will filter Sentry logs to `environment:staging` by default.

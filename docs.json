@@ -46,7 +46,8 @@
             "pages": [
               "integrations/linear",
               "integrations/jira",
-              "integrations/slack"
+              "integrations/slack",
+              "integrations/sentry"
             ]
           }
         ]
